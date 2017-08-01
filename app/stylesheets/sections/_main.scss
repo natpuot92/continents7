@@ -1,0 +1,115 @@
+.main__video {
+  width: 100%;
+  height: 661px;
+}
+
+.main__text-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: 82px;
+}
+
+.main__text-features {
+  max-width: 232px;
+  width: 100%;
+  font-family: AvenirNext;
+  line-height: 1.8;
+  letter-spacing: 5.2px;
+  font-size: 23.6px;
+  color: #ffffff;
+
+  text-transform: uppercase;
+}
+
+.main__text-desc {
+  max-width: 567px;
+
+  font-family: AvenirLight;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #fffefe;
+}
+
+.main__text-desc p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.main__text-digits {
+  max-width: 170px;
+  width: 100%;
+  padding-left: 25px;
+}
+
+.main__text-digit {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__text-digit-2 {
+  margin-top: 48px;
+}
+
+.main__text-digit-digit {
+  margin-bottom: 6px;
+
+  font-family: AvenirNextLTPro-Cn;
+  font-size: 103px;
+  line-height: 0.76;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.main__text-digit-text {
+  font-family: AvenirNextLTPro-Cn;
+
+  font-size: 35px;
+  color: #dd1c71;
+  text-transform: uppercase;
+}
+
+.main__text-digit::after {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 1px;
+
+  display: block;
+  width: 5px;
+  height: 116px;
+
+  background: url('../images/color-line.png') no-repeat center;
+  background-size: contain;
+}
+
+@media (max-width: 1172px) {
+  .main__video {
+    height: 55vw;
+  }
+}
+
+@media (max-width: 850px){
+  .main__text-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main__text-features {
+    order: 1;
+    margin-bottom: 30px;
+
+  }
+
+  .main__text-digits {
+    order: 2;
+    margin-bottom: 30px;
+  }
+
+  .main__text-desc {
+    order: 3;
+  }
+}

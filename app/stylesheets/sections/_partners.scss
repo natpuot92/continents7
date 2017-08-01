@@ -1,0 +1,50 @@
+.partners {
+  margin-top: 90px;
+}
+
+.partners-title {
+  font-family: AvenirNext;
+  font-size: 31.2px;
+  line-height: 2.08;
+  letter-spacing: 6.9px;
+  text-align: center;
+  color: #dd1c71;
+  text-transform: uppercase;
+}
+
+.partners-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  max-width: 570px;
+  width: 100%;
+}
+
+.partner {
+  position: relative;
+  width: 169px;
+  height: 169px;
+  margin: 0 auto;
+  margin-bottom: 29px;
+
+  border: solid 1px #dd1c71;
+  border-radius: 50%;
+}
+
+.partner-1 {
+  background: url('../images/partner-1.png') no-repeat center;
+}
+
+.partner-2 {
+  background: url('../images/partner-2.png') no-repeat center;
+}
+
+.partner-3 {
+  background: url('../images/partner-3.png') no-repeat center;
+}
+
+.partner-4 {
+  background: url('../images/partner-4.png') no-repeat center;
+}

@@ -1,6 +1,6 @@
 doctype html
 head
-  title Sunlight
+  title 7 continents
   meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
   meta(name="viewport" content="width=device-width")
   meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
@@ -9,7 +9,7 @@ head
   link(rel="stylesheet" href="stylesheets/app.css")
 body
   header.header
-    .container
+    .container.container-1
       .header__block-1
         a(href="#").header-logo
           img(src = "images/logo.png")
@@ -24,6 +24,7 @@ body
    main.main
     .container
       .main__video
+        iframe(src="https://player.vimeo.com/video/34673916" width="100%" height="100%" frameborder="0")
       .main__text-wrapper
         .main__text-features
           .main__text-features-title
@@ -43,6 +44,58 @@ body
             | Satisfying all sectors of the events industry, it’s the best opportunity to meet others in your field, learn about new technology and event trends, and be inspired by new design and creativity.
           p
             | Expand your network, showcase your products and services or simply come to see what’s out there!
+
+          form(action="#" method="#" id = "form").main__form
+            .main__form-text
+              | Download our Exhibition Profile and Sponsorship Packages now, and stay in the loop with news and updates.
+            .main__form-name
+              input(type="text" name="first_name" placeholder="First Name*").main__form-name-input.main__form-name-1
+              input(type="text" name="last_name" placeholder="last Name*").main__form-name-input
+            input(type="email" name="email" placeholder="email*").main__form-email
+            input(type="tel" name="phone" placeholder="phone number").main__form-phone
+            select(name = 'country').main__form-select
+              option(value="" disabled selected style='display:none;')
+                | выберите из списка
+
+              option(disabled selected)
+                | select a country*
+              option(value = "france")
+                | France
+              option(value = "germany")
+                | Germany
+              option(value = "spain")
+                | Spain
+            .main__form-intrested
+              | I’m interested in:
+            .main__form-checkboxs
+              label.main__form-checkbox.main__form-checkbox-1
+                input(type = "checkbox" id = "visiting" name = "visiting").main__form-checkbox-input
+                span
+                  | Visiting
+              label.main__form-checkbox.main__form-checkbox-2
+                input(type="checkbox" id = "exhibiting" name = "exhibiting").main__form-checkbox-input
+                span
+                  | Exhibiting
+              label.main__form-checkbox.main__form-checkbox-3
+                input(type="checkbox" id = "sponsoring" name = "sponsoring").main__form-checkbox-input
+                span
+                  | Sponsoring / Partnering
+            .main__form-btn
+              button(type= "button")
+                | Sign up
+          .partners
+            .partners-title
+              | Our partners
+          .partners-wrapper
+            .partner.partner-1
+
+            .partner.partner-2
+
+            .partner.partner-3
+
+            .partner.partner-4
+
+            .partner.partner-5
         .main__text-digits
           .main__text-digit.main__text-digit-1
             span.main__text-digit-digit
@@ -55,49 +108,7 @@ body
             span.main__text-digit-text
               | visitors
 
-      form(action="#" method="#" id = "form").main__form
-        .main__form-text
-          | Download our Exhibition Profile and Sponsorship Packages now, and stay in the loop with news and updates.
-        .main__form-name
-          input(type="text" name="first_name" placeholder="First Name*").main__form-name.main__form-name-1
-          input(type="text" name="last_name" placeholder="last Name*").main__form-name
-        input(type="email" name="email" placeholder="email*").main__form-email
-        input(type="tel" name="phone" placeholder="phone number").main__form-select
-        select(name = 'country').main__form-select
-          option(disabled)
-            | select a country*
-          option(value = "france")
-            | France
-          option(value = "germany")
-            | Germany
-          option(value = "spain")
-            | Spain
-        .main__form-intrested
-          | I’m interested in:
-        .main__form-checkboxs
-          .main__form-checkbox.main__form-checkbox-1
-            input(type = "checkbox" name = "visiting").main__form-checkbox
-            span
-              | Visiting
-          .main__form-checkbox.main__form-checkbox-2
-            input(type="checkbox" id = "exhibiting" name = "exhibiting").main__form-checkbox
-            span
-              | Exhibiting
-          .main__form-checkbox.main__form-checkbox-3
-            input(type="checkbox" id = "sponsoring" name = "sponsoring").main__form-checkbox
-            span
-              | Sponsoring / Partnering
-        .main__form-btn
-          button(type= "button")
-      .partners
-        .partners-title
-          | Our partners
-        .partners-wrapper
-          .partner.partner-1
-          .partner.partner-2
-          .partner.partner-3
-          .partner.partner-4
-          .partner.partner-5
+
   footer.footer
   script(src="javascripts/vendor.js")
   script(src="javascripts/app.js")
