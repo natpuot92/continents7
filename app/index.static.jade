@@ -1,0 +1,106 @@
+doctype html
+head
+  title Sunlight
+  meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+  meta(name="viewport" content="width=device-width")
+  meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+  link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css")
+  link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css")
+  link(rel="stylesheet" href="stylesheets/app.css")
+body
+  header.header
+    .container
+      .header__block-1
+        a(href="#").header-logo
+          img(src = "images/logo.png")
+        .header-text
+          img(src = "images/header-text.png")
+      .header__block-2
+        .header__social-links
+          a(href="#").header__social-link.header__social-link-1
+          a(href="#").header__social-link.header__social-link-2
+          a(href="#").header__social-link.header__social-link-3
+          a(href="#").header__social-link.header__social-link-4
+   main.main
+    .container
+      .main__video
+      .main__text-wrapper
+        .main__text-features
+          .main__text-features-title
+            | Features:
+          .main__text-features-workshops
+            | / Workshops
+          .main__text-features-conferences
+            | / Conferences
+          .main__text-features-inspiration
+            | / Inspiration
+          .main__text-features-entertainment
+            | / entertainment
+        .main__text-desc
+          p
+            | 7 Continents Expo is the first exhibition of its kind in the Middle East. Hosting visitors and exhibitors from all over the world, you get to actually experience the event not just attend it.
+          p
+            | Satisfying all sectors of the events industry, it’s the best opportunity to meet others in your field, learn about new technology and event trends, and be inspired by new design and creativity.
+          p
+            | Expand your network, showcase your products and services or simply come to see what’s out there!
+        .main__text-digits
+          .main__text-digit.main__text-digit-1
+            span.main__text-digit-digit
+              | 250
+            span.main__text-digit-text
+              | EXHIBITORS
+          .main__text-digit.main__text-digit-2
+            span.main__text-digit-digit
+              | 6k
+            span.main__text-digit-text
+              | visitors
+
+      form(action="#" method="#" id = "form").main__form
+        .main__form-text
+          | Download our Exhibition Profile and Sponsorship Packages now, and stay in the loop with news and updates.
+        .main__form-name
+          input(type="text" name="first_name" placeholder="First Name*").main__form-name.main__form-name-1
+          input(type="text" name="last_name" placeholder="last Name*").main__form-name
+        input(type="email" name="email" placeholder="email*").main__form-email
+        input(type="tel" name="phone" placeholder="phone number").main__form-select
+        select(name = 'country').main__form-select
+          option(disabled)
+            | select a country*
+          option(value = "france")
+            | France
+          option(value = "germany")
+            | Germany
+          option(value = "spain")
+            | Spain
+        .main__form-intrested
+          | I’m interested in:
+        .main__form-checkboxs
+          .main__form-checkbox.main__form-checkbox-1
+            input(type = "checkbox" name = "visiting").main__form-checkbox
+            span
+              | Visiting
+          .main__form-checkbox.main__form-checkbox-2
+            input(type="checkbox" id = "exhibiting" name = "exhibiting").main__form-checkbox
+            span
+              | Exhibiting
+          .main__form-checkbox.main__form-checkbox-3
+            input(type="checkbox" id = "sponsoring" name = "sponsoring").main__form-checkbox
+            span
+              | Sponsoring / Partnering
+        .main__form-btn
+          button(type= "button")
+      .partners
+        .partners-title
+          | Our partners
+        .partners-wrapper
+          .partner.partner-1
+          .partner.partner-2
+          .partner.partner-3
+          .partner.partner-4
+          .partner.partner-5
+  footer.footer
+  script(src="javascripts/vendor.js")
+  script(src="javascripts/app.js")
+
+  script.
+    require('initialize');

@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%
+}
+
+.header__block-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 49.5%;
+  width: 100%;
+}
+
+.header-logo {
+  display: block;
+  width: 54%;
+}
+
+.header-logo img {
+  display: block;
+  width: 100%;
+}
+
+.header__social-link {
+  display: block;
+}
+
+.header-text {
+  display: block;
+  margin-top: 9px;
+  width: 37%;
+}
+
+.header-text img {
+  display: block;
+  width: 100%;
+}
+
+.header__social-link {
+  width: 24px;
+  height: 24px;
+}
+
+.header__social-link-1 {
+  background: url("../images/instagram.png") no-repeat center;
+}
+
+.header__social-link-2 {
+  background: url("../images/twitter.png") no-repeat center;
+}
+
+.header__social-link-3 {
+  background: url("../images/facebook.png") no-repeat center;
+}
+
+.header__social-link-4 {
+   background: url("../images/linkedin.png") no-repeat center;
+}
