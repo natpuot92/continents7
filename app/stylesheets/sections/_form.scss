@@ -145,9 +145,20 @@
     height: 16px;
     border-radius: 3px;
     border: solid 1px #dd1c71;
-
+      transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
   }
 }
+
+.main__form-checkbox-input:checked ~ .main__form-checkboxs-desc::after {
+    width: 21px;
+    height: 10px;
+    border-radius: 0;
+    border-top-style: none;
+    border-right-style: none;
+    transform: rotate(-45deg);
+}
+
 
 .main__form-checkbox-input {
   position: absolute;
