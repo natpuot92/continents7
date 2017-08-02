@@ -53,18 +53,16 @@ body
               input(type="text" name="last_name" placeholder="last Name*").main__form-name-input
             input(type="email" name="email" placeholder="email*").main__form-email
             input(type="tel" name="phone" placeholder="phone number").main__form-phone
-            select(name = 'country').main__form-select
-              option(value="" disabled selected style='display:none;')
-                | выберите из списка
-
-              option(disabled selected)
-                | select a country*
-              option(value = "france")
-                | France
-              option(value = "germany")
-                | Germany
-              option(value = "spain")
-                | Spain
+            .main__form-select-wrapper
+              select(name = 'country').main__form-select
+                option(disabled selected style='color: black;')
+                  | select a country*
+                option(value = "france")
+                  | France
+                option(value = "germany")
+                  | Germany
+                option(value = "spain")
+                  | Spain
             .main__form-intrested
               | I’m interested in:
             .main__form-checkboxs
