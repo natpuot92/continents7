@@ -1,5 +1,6 @@
 .header {
   width: 100%;
+  margin-bottom: 80px;
 }
 
 .container-1 {
@@ -121,6 +122,10 @@
 }
 
 @media (max-width: 600px) {
+
+  .header {
+    margin-bottom: 7%;
+  }
 
   .container-1 {
     background-position: 0 30px;
