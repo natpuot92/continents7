@@ -34,6 +34,12 @@
 
 .header__social-link {
   display: block;
+  opacity: 0.8;
+  transition: opacity .3s;
+}
+
+.header__social-link:hover {
+  opacity: 1;
 }
 
 .header-text {
@@ -95,6 +101,8 @@
 @media (max-width: 750px) {
   .container-1 {
     padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .header__block-1 {
@@ -130,6 +138,11 @@
   .container-1 {
     background-position: 0 30px;
   }
-
 }
 
+@media (max-width: 400px) {
+  .container-1 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

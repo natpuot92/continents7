@@ -23,7 +23,12 @@ a {
 
   max-width: 1200px;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 18px;
   margin: 0 auto;
 }
 
+@media (max-width: 400px) {
+  .container {
+    padding: 0 15px;
+  }
+}
