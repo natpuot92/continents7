@@ -27,7 +27,7 @@ body
   main.main
     .container
       .main__video
-        iframe(src="https://player.vimeo.com/video/34673916" width="100%" height="100%" frameborder="0")
+        iframe(src="https://player.vimeo.com/video/228202112" width="100%" height="100%" frameborder="0" )
       .main__text-wrapper
         .main__text-features
           .main__text-features-title
@@ -60,12 +60,6 @@ body
               select(name = 'country').main__form-select
                 option(disabled selected style='color: black;')
                   | select a country*
-                option(value = "france")
-                  | France
-                option(value = "germany")
-                  | Germany
-                option(value = "spain")
-                  | Spain
             .main__form-intrested
               | I’m interested in:
             .main__form-checkboxs
@@ -108,9 +102,13 @@ body
               | 6k
             span.main__text-digit-text
               | visitors
-  footer.footer
+  .popup
+    .overlay
+      .popup__container
+        .popup__btn-close
+        .popup-message
+          | Thank you message
 
-  footer.footer
   script(src="javascripts/vendor.js")
   script(src="javascripts/app.js")
 

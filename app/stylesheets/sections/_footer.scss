@@ -1,0 +1,96 @@
+.overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  overflow: auto;
+
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.popup__container {
+  position: fixed;
+
+  z-index: 100;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 465px;
+  width: 100%;
+  min-height: 324px;
+  //padding-top: 50px;
+  //padding-left: 96px;
+  //padding-right: 100px;
+  //padding-bottom: 90px;
+
+  background: #061e3d;
+}
+
+.popup__btn-close {
+  position: absolute;
+  top: 27px;
+  right: 27px;
+
+
+  width: 27px;
+  height: 27px;
+
+
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 13px;
+
+    display: block;
+    width: 27px;
+    height: 2px;
+
+    transform: rotate(45deg);
+
+    background: #dd1c71;
+    opacity: 0.8;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 13px;
+
+    display: block;
+    width: 27px;
+    height: 2px;
+
+    transform: rotate(-45deg);
+
+    background: #dd1c71;
+    opacity: 0.8;
+  }
+}
+
+.popup__btn-close:hover {
+  &::after {
+    opacity: 1
+  }
+  &::before {
+    opacity: 1
+  }
+}
+
+.popup-message {
+  font-family: AvenirMedium;
+  font-size: 24px;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
