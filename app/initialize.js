@@ -1,9 +1,7 @@
 import $ from "jquery"
 import validation from 'jquery-validation'
 import countries from 'countries.js'
-import sweetalert from 'sweetalert'
-
-console.log(countries[1].name);
+import swal from 'sweetalert2'
 
 for (var i = 0; countries.length > i; i++) {
   $('.main__form-select').append('<option' + ' value =' + countries[i].name + '>' + countries[i].name + '</option>');
@@ -37,7 +35,33 @@ $("#form").validate({
     return true;
   },
   submitHandler: function(form) {
-    $('.popup').removeClass('hidden')
+    const dataArray = $(form).serializeArray()
+    let data = {interested: ''};
+
+    dataArray.map(item => { 
+      if (item.name === 'visiting') {
+        data['interested'] += ' visiting '
+      }
+      else if (item.name === 'exhibiting') {
+        data['interested'] += ' exhibiting '
+      }
+      else if (item.name === 'sponsoring') {
+        data['interested'] += ' sponsoring '
+      }
+      else {
+        data[item.name] = item.value
+      }
+    });
+
+    console.log(data)
+
+    $.ajax({
+      type: 'POST',
+      url: 'contact.php',
+      data: data,
+      success: () => swal("Thank you for subscribing!", "We will be contacting you soon for further updates.", "success"),
+      error: () => swal("Oops", "Something went wrong", "error"),
+    })
   }
 })
 })
