@@ -3,9 +3,9 @@ import validation from 'jquery-validation'
 import countries from 'countries.js'
 import swal from 'sweetalert2'
 
-for (var i = 0; countries.length > i; i++) {
-  $('.main__form-select').append('<option' + ' value =' + countries[i].name + '>' + countries[i].name + '</option>');
-}
+countries.map(country => 
+  $('.main__form-select').append(`<option value="${country.name}">${country.name}</option>`)
+)
 
 $(document).ready(function(){
   $("#worldmap").find("path").each(function(i, e){
@@ -52,6 +52,8 @@ $("#form").validate({
         data[item.name] = item.value
       }
     });
+
+    console.log(data)
 
     $.ajax({
       type: 'POST',
