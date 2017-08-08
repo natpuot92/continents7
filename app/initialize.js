@@ -53,8 +53,6 @@ $("#form").validate({
       }
     });
 
-    console.log(data)
-
     $.ajax({
       type: 'POST',
       url: 'contact.php',
